@@ -1,0 +1,134 @@
+$color-yellow:#FFD366;
+$color-black:#424242;
+$color-white:#FFFFFF;
+$color-gray:rgba(255,255,255,0.18);
+$big-font:24px;
+$color-Underweigh:#31BAF9;
+$color-Normal:#86D73F;
+$color-Overweight: #FF982D;
+$color-Obese-Class1:#FF6C03;
+$color-Obese-Class2: #FF6C04;
+$color-Obese-Class3:#FF1200;
+
+
+.header{
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background: $color-black;
+    form{
+        margin:0 50px;
+        line-height: 2;
+        label{
+            color:$color-yellow;
+        }
+        input{
+            color:$color-white;
+            display: block;
+            background:$color-gray;
+            border: 2px solid $color-yellow;
+            border-radius: 10px;
+            text-indent: 5px;
+         }
+    }
+    button{
+        border-radius: 50%;
+        font-size: $big-font;
+        background: $color-yellow;
+        border: 0;
+        width: 120px;
+        height: 120px;
+    }
+    button:hover{
+        box-shadow: 0 1px 6px 3px ;
+    }
+    button:active{
+        background: #DEA821;
+    }
+}
+.content{
+    background: #cccccc;
+    padding: 30px 0;
+    h2{
+        text-align: center;
+        font-size: $big-font;
+        margin-bottom: 10px;
+    }    
+    .list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        li{
+            background: #FFFFFF;
+            padding: 5px;
+            margin: 5px 0;
+            span{
+                margin: 0 15px;
+                h2{
+                   margin-left: 15px;
+                   margin-right: 5px;
+                   display: inline;
+                }
+            }
+        }
+    }
+}
+.footer{
+    background: $color-yellow;
+    text-align: center;
+    img{
+        color:$color-black;
+        width: 50px;
+        height: 50px;
+    }
+    
+}
+.button{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    border-radius: 50%;
+    background: $color-black;
+    text-align: center;
+    h2{
+        font-size: 24px;
+        margin-top: 35px;
+    }
+}
+.clear{
+    border: 3px solid $color-black;
+    border-radius: 50%;
+    color: #FFF;
+    text-decoration: none;
+    position: absolute;
+    right:1px;
+    bottom: 1px;
+}
+.clear:hover{
+    border: 3px solid #FFFF;
+    border-radius: 50%;
+}
+.Underweigh-clear{
+    background:$color-Underweigh 
+}
+
+.Underweigh{
+    border-left:5px solid $color-Underweigh;
+}
+.Normal{
+    border-left:5px solid $color-Normal;
+}
+.Overweight{
+    border-left:5px solid $color-Overweight;
+}
+.Obese-Class1{
+    border-left:5px solid $color-Obese-Class1;
+}
+.Obese-Class2{
+    border-left:5px solid $color-Obese-Class2;
+}
+.Obese-Class3{
+    border-left:5px solid $color-Obese-Class3;
+}
